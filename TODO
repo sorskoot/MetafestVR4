@@ -15,14 +15,16 @@ Must Have:
     ☐ After surviving a certain amount of time you go to the next level
 
 
-Should Have:
+Should Have:    
+    ☐ Animations of dying animals
     ☐ Generate Levels
         ~ Maybe hard code a couple and show them if needed
-        ~ Or create some sort of config and generate when needed        
+        ~ Or create some sort of config and generate when needed            
 
 
 Could Have:
     ☐ Physics
+    ☐ Some shader trick when looking under water.
 
 Would Like:
 

@@ -22,7 +22,7 @@ WL.registerComponent('float', {
         
         this.object.setTranslationLocal(
             [this.orgPosition[0],             
-            this.orgPosition[1],
-            this.orgPosition[2]+(Math.sin(this.count) * this.depth)]);
+            this.orgPosition[1]+(Math.sin(this.count) * this.depth),
+            this.orgPosition[2]]);
     },
 });
