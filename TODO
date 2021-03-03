@@ -1,6 +1,7 @@
 THEME Ascending or Rising
 
 Must Have:
+    ☐ Transform to more god-like view
     Move animals between islands:
         ☐ Pick them up
         ☐ Place them down
@@ -27,6 +28,10 @@ Could Have:
     ☐ Some shader trick when looking under water.
 
 Would Like:
+
+Bugs:
+    ☐ Rays on animals don't go straight down, but down relative to the animal.
+        ~ you can almost throw animals as darts.
 
 
 - Sea level / Global Warming
