@@ -1,0 +1,1468 @@
+{
+    "objects": {
+        "14": {
+            "name": "Player",
+            "components": [
+                {
+                    "type": "wasd-controls",
+                    "wasd-controls": {
+                        "headObject": "17"
+                    }
+                }
+            ],
+            "transformation": [
+                0.7160133123397827,
+                0.0,
+                0.6980865001678467,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -0.6980865001678467,
+                0.0,
+                0.7160133123397827,
+                0.0,
+                0.0,
+                1.7999999523162842,
+                0.0,
+                1.0
+            ]
+        },
+        "15": {
+            "name": "Sea",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "37"
+                    }
+                }
+            ],
+            "transformation": [
+                4.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.0016164779663085938,
+                -3.999999761581421,
+                0.0,
+                0.0,
+                3.999999761581421,
+                -0.0016164779663085938,
+                0.0,
+                0.0,
+                0.0,
+                1.192092895507813e-7,
+                1.0
+            ],
+            "parent": "54"
+        },
+        "16": {
+            "name": "Cube",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "22"
+                    }
+                }
+            ],
+            "transformation": [
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.5,
+                0.0,
+                2.9802322387695329e-8,
+                0.4999999403953552,
+                5.960464477539065e-8,
+                1.0
+            ],
+            "deleted": true
+        },
+        "17": {
+            "name": "NonVrCamera",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "mouse-look"
+                }
+            ]
+        },
+        "18": {
+            "name": "EyeLeft",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye left"
+                    }
+                }
+            ]
+        },
+        "19": {
+            "name": "EyeRight",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye right"
+                    }
+                }
+            ]
+        },
+        "21": {
+            "name": "Light",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "attenuation": 0.10000000149011612,
+                        "type": "sun"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                2.0,
+                0.0,
+                0.0,
+                3.700000047683716,
+                5.800000190734863,
+                1.0
+            ]
+        },
+        "23": {
+            "name": "Light.000",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "attenuation": 0.10000000149011612,
+                        "color": [
+                            0.2509803771972656,
+                            0.5745412707328796,
+                            0.800000011920929
+                        ]
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.10000000149011612,
+                3.799999952316284,
+                -1.0,
+                1.0
+            ]
+        },
+        "24": {
+            "name": "Cone",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "10",
+                        "material": "25"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                1.5,
+                1.0,
+                -1.4901161193847657e-8,
+                1.0
+            ],
+            "deleted": true
+        },
+        "27": {
+            "name": "Sphere",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.75,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.75,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.75,
+                0.0,
+                0.4999999701976776,
+                0.75,
+                -1.25,
+                1.0
+            ],
+            "deleted": true
+        },
+        "34": {
+            "link": {
+                "name": "bear_polar",
+                "file": "assets\\bear_polar.fbx"
+            },
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -0.8409490585327148,
+                0.0,
+                1.0
+            ],
+            "parent": "72",
+            "components": [
+                null
+            ]
+        },
+        "42": {
+            "link": {
+                "name": "penguin",
+                "file": "assets\\penguin.fbx"
+            },
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -1.2614734172821046,
+                1.2515177726745606,
+                -2.055159568786621,
+                1.0
+            ],
+            "components": [
+                {
+                    "mesh": {
+                        "material": "32"
+                    }
+                }
+            ],
+            "parent": "51",
+            "deleted": true
+        },
+        "45": {
+            "link": {
+                "name": "barrel",
+                "file": "assets\\barrel.fbx"
+            },
+            "components": [
+                {
+                    "mesh": {
+                        "material": "32"
+                    }
+                },
+                {
+                    "type": "float",
+                    "float": {
+                        "speed": 4.0,
+                        "depth": 0.009999999776482582
+                    }
+                }
+            ],
+            "transformation": [
+                0.05412657931447029,
+                0.000012629206139536109,
+                -0.031250011175870898,
+                0.0,
+                0.02707092836499214,
+                -0.031242530792951585,
+                0.04687557369470596,
+                0.0,
+                -0.015611797571182253,
+                -0.05413090065121651,
+                -0.027062293142080308,
+                0.0,
+                -0.20693090558052064,
+                0.00001241165227838792,
+                -0.030731262639164929,
+                1.0
+            ],
+            "parent": "15"
+        },
+        "48": {
+            "link": {
+                "name": "boat-sail",
+                "file": "assets\\boat-sail.fbx"
+            },
+            "transformation": [
+                0.25,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.00010102987289428712,
+                0.2499999850988388,
+                0.0,
+                0.0,
+                -0.2499999850988388,
+                -0.00010102987289428712,
+                0.0,
+                -0.5583939552307129,
+                2.9802320611338474e-8,
+                1.2043699371133698e-11,
+                1.0
+            ],
+            "components": [
+                {
+                    "mesh": {
+                        "material": "32"
+                    }
+                },
+                {
+                    "type": "float",
+                    "float": {
+                        "speed": 1.5,
+                        "depth": 0.009999999776482582
+                    }
+                }
+            ],
+            "parent": "15"
+        },
+        "51": {
+            "link": {
+                "name": "rock-terrasse",
+                "file": "assets\\rock-terrasse.fbx"
+            },
+            "transformation": [
+                0.0625,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.00002525746822357178,
+                0.0624999962747097,
+                0.0,
+                0.0,
+                -0.0624999962747097,
+                -0.00002525746822357178,
+                0.0,
+                0.21054330468177796,
+                0.05235636606812477,
+                -0.05203164368867874,
+                1.0
+            ],
+            "components": [
+                {
+                    "mesh": {
+                        "material": "20"
+                    }
+                },
+                {
+                    "type": "float",
+                    "float": {
+                        "depth": 0.009999999776482582,
+                        "speed": 3.0
+                    }
+                }
+            ],
+            "parent": "15"
+        },
+        "52": {
+            "link": {
+                "name": "penguin",
+                "file": "assets\\penguin.fbx"
+            },
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -1.2614734172821046,
+                1.2515177726745606,
+                1.308763027191162,
+                1.0
+            ],
+            "components": [
+                {
+                    "mesh": {
+                        "material": "32"
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.10000000149011612
+                        },
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                0.07999999821186066,
+                                0.25,
+                                0.07999999821186066
+                            ]
+                        }
+                    }
+                }
+            ],
+            "parent": "51"
+        },
+        "53": {
+            "name": "Empty",
+            "deleted": true
+        },
+        "54": {
+            "name": "SeaLevel",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                1.0
+            ]
+        },
+        "55": {
+            "name": "Sea",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "37"
+                    }
+                }
+            ],
+            "transformation": [
+                4.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.0016164779663085938,
+                -3.999999761581421,
+                0.0,
+                0.0,
+                3.999999761581421,
+                -0.0016164779663085938,
+                0.0,
+                0.0,
+                0.0,
+                8.0,
+                1.0
+            ],
+            "parent": "54"
+        },
+        "56": {
+            "name": "Sea",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "37"
+                    }
+                }
+            ],
+            "transformation": [
+                4.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.0016164779663085938,
+                -3.999999761581421,
+                0.0,
+                0.0,
+                3.999999761581421,
+                -0.0016164779663085938,
+                0.0,
+                8.0,
+                0.0,
+                8.0,
+                1.0
+            ],
+            "parent": "54"
+        },
+        "57": {
+            "name": "Sea",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "37"
+                    }
+                }
+            ],
+            "transformation": [
+                4.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.0016164779663085938,
+                -3.999999761581421,
+                0.0,
+                0.0,
+                3.999999761581421,
+                -0.0016164779663085938,
+                0.0,
+                8.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "parent": "54"
+        },
+        "58": {
+            "name": "Sea",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "37"
+                    }
+                }
+            ],
+            "transformation": [
+                4.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.0016164779663085938,
+                -3.999999761581421,
+                0.0,
+                0.0,
+                3.999999761581421,
+                -0.0016164779663085938,
+                0.0,
+                8.0,
+                0.0,
+                -8.0,
+                1.0
+            ],
+            "parent": "54"
+        },
+        "59": {
+            "name": "Sea",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "37"
+                    }
+                }
+            ],
+            "transformation": [
+                4.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.0016164779663085938,
+                -3.999999761581421,
+                0.0,
+                0.0,
+                3.999999761581421,
+                -0.0016164779663085938,
+                0.0,
+                0.0,
+                0.0,
+                -8.0,
+                1.0
+            ],
+            "parent": "54"
+        },
+        "60": {
+            "name": "Sea",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "37"
+                    }
+                }
+            ],
+            "transformation": [
+                4.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.0016164779663085938,
+                -3.999999761581421,
+                0.0,
+                0.0,
+                3.999999761581421,
+                -0.0016164779663085938,
+                0.0,
+                -8.0,
+                0.0,
+                -8.0,
+                1.0
+            ],
+            "parent": "54"
+        },
+        "61": {
+            "name": "Sea",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "37"
+                    }
+                }
+            ],
+            "transformation": [
+                4.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.0016164779663085938,
+                -3.999999761581421,
+                0.0,
+                0.0,
+                3.999999761581421,
+                -0.0016164779663085938,
+                0.0,
+                -8.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "parent": "54"
+        },
+        "62": {
+            "name": "Sea",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "37"
+                    }
+                }
+            ],
+            "transformation": [
+                4.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.0016164779663085938,
+                -3.999999761581421,
+                0.0,
+                0.0,
+                3.999999761581421,
+                -0.0016164779663085938,
+                0.0,
+                -8.0,
+                0.0,
+                8.0,
+                1.0
+            ],
+            "parent": "54"
+        },
+        "63": {
+            "link": {
+                "name": "rock-terrasse",
+                "file": "assets\\rock-terrasse.fbx"
+            },
+            "transformation": [
+                0.0625,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.00002525746822357178,
+                0.0624999962747097,
+                0.0,
+                0.0,
+                -0.0624999962747097,
+                -0.00002525746822357178,
+                0.0,
+                0.22362279891967777,
+                -0.9909602403640748,
+                -0.052452851086854938,
+                1.0
+            ],
+            "components": [
+                {
+                    "mesh": {
+                        "material": "20"
+                    }
+                },
+                {
+                    "type": "float",
+                    "float": {
+                        "depth": 0.009999999776482582,
+                        "speed": 3.0
+                    }
+                }
+            ],
+            "parent": "15"
+        },
+        "64": {
+            "link": {
+                "name": "rock-terrasse",
+                "file": "assets\\rock-terrasse.fbx"
+            },
+            "transformation": [
+                0.0625,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.00002525746822357178,
+                0.0624999962747097,
+                0.0,
+                0.0,
+                -0.0624999962747097,
+                -0.00002525746822357178,
+                0.0,
+                1.0053247213363648,
+                0.4427700340747833,
+                -0.051873479038476947,
+                1.0
+            ],
+            "components": [
+                {
+                    "mesh": {
+                        "material": "20"
+                    }
+                },
+                {
+                    "type": "float",
+                    "float": {
+                        "depth": 0.05000000074505806,
+                        "speed": 3.0
+                    }
+                }
+            ],
+            "parent": "15",
+            "deleted": true
+        },
+        "65": {
+            "name": "Left hand",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "hand left"
+                    }
+                }
+            ]
+        },
+        "66": {
+            "name": "Right Hand",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "ray right"
+                    }
+                },
+                {
+                    "type": "grab"
+                },
+                {
+                    "type": "cursor",
+                    "cursor": {
+                        "cursorObject": "68",
+                        "handedness": "right"
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.05000000074505806
+                        },
+                        "groups": 2
+                    }
+                }
+            ]
+        },
+        "67": {
+            "name": "Mesh",
+            "parent": "66",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "25"
+                    }
+                }
+            ],
+            "transformation": [
+                0.10000000149011612,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.10000000149011612,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.10000000149011612,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "68": {
+            "name": "Mesh.000",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                }
+            ],
+            "transformation": [
+                0.009999999776482582,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.009999999776482582,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.009999999776482582,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "69": {
+            "name": "Empty.000",
+            "parent": "51",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                2.1543917655944826,
+                0.0,
+                1.0
+            ],
+            "deleted": true
+        },
+        "70": {
+            "link": {
+                "name": "penguin",
+                "file": "assets\\penguin.fbx"
+            },
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -1.2614734172821046,
+                1.2515177726745606,
+                1.308763027191162,
+                1.0
+            ],
+            "components": [
+                {
+                    "mesh": {
+                        "material": "32"
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.10000000149011612
+                        },
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                0.07999999821186066,
+                                0.25,
+                                0.07999999821186066
+                            ]
+                        }
+                    }
+                }
+            ],
+            "parent": "51",
+            "deleted": true
+        },
+        "71": {
+            "link": {
+                "name": "penguin",
+                "file": "assets\\penguin.fbx"
+            },
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -1.8277299404144288,
+                1.2515177726745606,
+                -1.8618425130844117,
+                1.0
+            ],
+            "components": [
+                {
+                    "mesh": {
+                        "material": "32"
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.10000000149011612
+                        },
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                0.07999999821186066,
+                                0.25,
+                                0.07999999821186066
+                            ]
+                        }
+                    }
+                }
+            ],
+            "parent": "51"
+        },
+        "72": {
+            "name": "PolarBear",
+            "parent": "51",
+            "transformation": [
+                0.8528087735176086,
+                0.0,
+                0.5222228765487671,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -0.5222228765487671,
+                0.0,
+                0.8528087735176086,
+                0.0,
+                0.7434592247009277,
+                2.246481418609619,
+                1.9205328226089478,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "box",
+                        "aabb": {
+                            "extents": [
+                                0.20000000298023225,
+                                0.30000001192092898,
+                                0.4000000059604645
+                            ]
+                        },
+                        "groups": 2,
+                        "box": {
+                            "extents": [
+                                0.20000000298023225,
+                                0.30000001192092898,
+                                0.30000001192092898
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "meshes": {
+        "7": {
+            "link": {
+                "name": "PrimitivePlane",
+                "file": "default"
+            }
+        },
+        "8": {
+            "link": {
+                "name": "PrimitiveCube",
+                "file": "default"
+            }
+        },
+        "9": {
+            "link": {
+                "name": "PrimitiveSphere",
+                "file": "default"
+            }
+        },
+        "10": {
+            "link": {
+                "name": "PrimitiveCone",
+                "file": "default"
+            }
+        },
+        "11": {
+            "link": {
+                "name": "PrimitiveCylinder",
+                "file": "default"
+            }
+        },
+        "12": {
+            "link": {
+                "name": "PrimitiveCircle",
+                "file": "default"
+            }
+        },
+        "33": {
+            "link": {
+                "name": "mesh_0",
+                "file": "assets\\bear_polar.fbx"
+            },
+            "importScaling": 0.009999999776482582,
+            "name": "PolarBear"
+        },
+        "41": {
+            "link": {
+                "name": "mesh_0",
+                "file": "assets\\penguin.fbx"
+            },
+            "name": "Penguin",
+            "importScaling": 0.009999999776482582
+        },
+        "44": {
+            "link": {
+                "name": "mesh_0",
+                "file": "assets\\barrel.fbx"
+            },
+            "name": "Barrel",
+            "importScaling": 0.009999999776482582
+        },
+        "47": {
+            "link": {
+                "name": "mesh_0",
+                "file": "assets\\boat-sail.fbx"
+            },
+            "name": "Boat",
+            "importScaling": 0.10000000149011612
+        },
+        "50": {
+            "link": {
+                "name": "mesh_0",
+                "file": "assets\\rock-terrasse.fbx"
+            },
+            "name": "Ice",
+            "importScaling": 0.009999999776482582
+        }
+    },
+    "textures": {
+        "t0": {
+            "link": {
+                "name": "DefaultFont",
+                "file": "default"
+            },
+            "name": "DefaultFont"
+        },
+        "36": {
+            "link": {
+                "name": "color-atlas-new.png",
+                "file": "assets\\textures\\color-atlas-new.png"
+            }
+        },
+        "39": {
+            "link": {
+                "name": "Water.jpg",
+                "file": "assets\\textures\\Water.jpg"
+            }
+        }
+    },
+    "images": {
+        "35": {
+            "link": {
+                "name": "color-atlas-new.png",
+                "file": "assets\\textures\\color-atlas-new.png"
+            }
+        },
+        "38": {
+            "link": {
+                "name": "Water.jpg",
+                "file": "assets\\textures\\Water.jpg"
+            }
+        }
+    },
+    "materials": {
+        "DefaultFontMaterial": {
+            "link": {
+                "name": "DefaultFontMaterial",
+                "file": "default"
+            }
+        },
+        "20": {
+            "name": "White",
+            "shader": "Phong",
+            "Phong": {
+                "specularColor": [
+                    9.999899930335233e-7,
+                    9.99993744699168e-7,
+                    9.999999974752428e-7,
+                    1.0
+                ],
+                "shininess": 1,
+                "diffuseColor": [
+                    1.0,
+                    0.9999899864196776,
+                    0.9999899864196776,
+                    1.0
+                ]
+            }
+        },
+        "22": {
+            "name": "Pink",
+            "Phong": {
+                "diffuseColor": [
+                    0.9098039269447328,
+                    0.0,
+                    0.5411764979362488,
+                    0.0
+                ],
+                "specularColor": [
+                    9.999899930335233e-7,
+                    9.999911299019005e-7,
+                    9.999999974752428e-7,
+                    1.0
+                ],
+                "shininess": 10,
+                "ambientColor": [
+                    0.3176470398902893,
+                    0.0,
+                    0.2165777683258057,
+                    1.0
+                ]
+            }
+        },
+        "25": {
+            "name": "Yellow",
+            "Phong": {
+                "diffuseColor": [
+                    1.0,
+                    0.8039215803146362,
+                    0.0,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752428e-7,
+                    9.999899930335233e-7,
+                    9.999899930335233e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.384313702583313,
+                    0.3089579045772553,
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        "26": {
+            "name": "Green",
+            "Phong": {
+                "diffuseColor": [
+                    0.15294118225574494,
+                    0.7882353067398071,
+                    0.5411764979362488,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752428e-7,
+                    9.999899930335233e-7,
+                    9.999899930335233e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.0,
+                    0.23529410362243653,
+                    0.1437908560037613,
+                    1.0
+                ]
+            }
+        },
+        "32": {
+            "link": {
+                "name": "LOWPOLY-COLORS",
+                "file": "assets\\bear_polar.fbx"
+            },
+            "Phong": {
+                "diffuseTexture": "36"
+            },
+            "shader": "Phong Textured",
+            "name": "Low Poly Colors"
+        },
+        "37": {
+            "name": "Water",
+            "Phong": {
+                "diffuseTexture": "39"
+            },
+            "shader": "Phong Textured"
+        },
+        "40": {
+            "link": {
+                "name": "LOWPOLY-COLORS",
+                "file": "assets\\penguin.fbx"
+            }
+        },
+        "43": {
+            "link": {
+                "name": "LOWPOLY-COLORS",
+                "file": "assets\\barrel.fbx"
+            }
+        },
+        "46": {
+            "link": {
+                "name": "LOWPOLY-COLORS",
+                "file": "assets\\boat-sail.fbx"
+            }
+        },
+        "49": {
+            "link": {
+                "name": "LOWPOLY-COLORS",
+                "file": "assets\\rock-terrasse.fbx"
+            }
+        }
+    },
+    "shaders": {
+        "1": {
+            "link": {
+                "name": "DistanceFieldVector Textured",
+                "file": "default"
+            }
+        },
+        "2": {
+            "link": {
+                "name": "Flat",
+                "file": "default"
+            }
+        },
+        "3": {
+            "link": {
+                "name": "Flat Textured",
+                "file": "default"
+            }
+        },
+        "4": {
+            "link": {
+                "name": "MeshVisualizer",
+                "file": "default"
+            }
+        },
+        "5": {
+            "link": {
+                "name": "Phong",
+                "file": "default"
+            }
+        },
+        "6": {
+            "link": {
+                "name": "Phong Textured",
+                "file": "default"
+            }
+        },
+        "28": {
+            "link": {
+                "name": "Dynamic",
+                "file": "default"
+            }
+        },
+        "29": {
+            "link": {
+                "name": "Particle Textured",
+                "file": "default"
+            }
+        },
+        "30": {
+            "link": {
+                "name": "Skinning",
+                "file": "default"
+            }
+        },
+        "31": {
+            "link": {
+                "name": "Static",
+                "file": "default"
+            }
+        }
+    },
+    "settings": {
+        "project": {
+            "name": "MetaFestVRJam4",
+            "version": [
+                0,
+                8,
+                1
+            ]
+        },
+        "vr": {
+            "leftEyeObject": "18",
+            "rightEyeObject": "19"
+        },
+        "scripting": {
+            "sourcePaths": [
+                "/js/components/",
+                "js/",
+                "js/components"
+            ]
+        },
+        "runtime": {
+            "visualizeColliders": false
+        },
+        "rendering": {
+            "clearColor": [
+                0.6078431606292725,
+                0.8577255010604858,
+                1.0,
+                1.0
+            ],
+            "transparentBg": false
+        }
+    },
+    "animations": {},
+    "skins": {},
+    "files": [
+        "assets/bear_polar.fbx",
+        "assets/textures/color-atlas-new.png",
+        "assets/textures/Water.jpg",
+        "assets/penguin.fbx",
+        "assets/barrel.fbx",
+        "assets/boat-sail.fbx",
+        "assets/rock-terrasse.fbx"
+    ]
+}

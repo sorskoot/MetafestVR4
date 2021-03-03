@@ -1,0 +1,82 @@
+THEME Ascending or Rising
+
+Must Have:
+    Move animals between islands:
+        ☐ Pick them up
+        ☐ Place them down
+        ☐ Drop them in the ocean
+        ☐ Calculate weight on Island, lose the Island and Animimals if weight is too much
+
+    ☐ Barrels in sea
+    ☐ Rise sea level and shrink islands based on the number of barrels in the sea
+    ☐ 0 barels lowers sea and grows ice
+
+    ☐ if water is at certain level, drown and die.
+    ☐ After surviving a certain amount of time you go to the next level
+
+
+Should Have:
+    ☐ Generate Levels
+        ~ Maybe hard code a couple and show them if needed
+        ~ Or create some sort of config and generate when needed        
+
+
+Could Have:
+    ☐ Physics
+
+Would Like:
+
+
+- Sea level / Global Warming
+    ~ Save polarbears and pinguins (seals)
+    ~ they are on little pieces of Ice that shrink
+        over time and you have to save them.
+    ~ god view (like populous)
+    ~ rules: 
+        - water rises when trash is in water and ice melts
+        - 1 polarbear weighs 10 pinguins
+        - Ice is lower in the water by weight        
+        - clean the ocean of rubbish
+            ~ boats drop trash in the ocean making the 
+                water rise.
+            ~ when boats sink it releases a lot of trash in 
+                the water
+    ~ challenges:
+        - Ices that shrinks.
+            ~ maybe slowly scale it down
+
+
+
+
+
+- Leaking submarine
+    ~ room scale
+    ~ little challenges like among us to do in a room
+        before the water gets to high.
+    ~ doing thing wrong, increases speed of rising water
+    ~ challenges:
+        - Water
+        - a lot of different mini games.
+        - Creating graphics
+
+    - Escalator / Stair
+    - Stars  / pop stars
+    - helium baloons 
+  
+
+    - Rockets / Firework
+        ~ design a show
+    - Zombies rising from their graves
+    - Mont St. Michel - rising tides
+        ~ keep your castle from flooding
+        
+    - Climb a mountain without drowning
+        ~ Find your way up before the water catches you
+        ~ Stairs
+        ~ open floodgates by doing 'challenges'
+    - join the maffia and rise to the top
+    - rebuild of descent. 
+
+    
+    
+
