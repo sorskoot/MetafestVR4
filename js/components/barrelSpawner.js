@@ -15,8 +15,21 @@ WL.registerComponent('barrel-spawner', {
 
         if(this.counter > this.spawnrate){
             this.counter=0;
-            let barrel = WL.scene.addObject(barrelsLayer);
+            let barrel = WL.scene.addObject(this.barrelsLayer);
+            let barrelMesh = WL.scene.addObject(barrel);
+            let mesh = barrelMesh.addComponent('mesh');
+            mesh.mesh = this.barrelmesh;
+            mesh.material = this.barrelmaterial;
+            barrelMesh.translate([0,-0.175,0]);
 
+            barrel.translate([Math.random()*6-3,0,Math.random()*6-3]);
+            barrel.addComponent('float');
+            barrel.addComponent('tags',{tags:'barrel'});
+            let collisionComponent = barrel.addComponent('collision');
+            collisionComponent.collider = WL.Collider.Box;
+            collisionComponent.group = 1 << 3;
+            collisionComponent.extents = [0.11,0.17,.11];
+            collisionComponent.active = true;
         }
     },
 });
