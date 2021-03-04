@@ -8,6 +8,6 @@ const objectUtils = {
      * @returns {WL.Object} child with name
      */
     getChildByName: function (object, name) {
-        return object.children.find(d => d.name === name);        
+        return object.children.find(function (d) { return d.name === name });
     }
 }

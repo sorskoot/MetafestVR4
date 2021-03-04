@@ -46,7 +46,7 @@ WL.registerComponent('grab', {
                 this.draggingObj.parent = animalsContainer;                
                 this.draggingObj.setTranslationWorld(
                     [rayHit.locations[0][0]
-                    ,rayHit.locations[0][1]+.25,
+                    ,rayHit.locations[0][1]+.1,
                     rayHit.locations[0][2]]);
 
                 this.draggingObj = null;
