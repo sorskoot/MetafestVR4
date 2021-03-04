@@ -5,13 +5,13 @@ WL.registerComponent('grab', {
 }, {
     init: function () {
 
-    },
+    },    
     start: function () {
         this.input = this.object.getComponent("input");
         this.collions = this.object.getComponent("collision")
         this.pickingActive = false;
 
-    },
+    },    
     update: function (dt) {
 
         if (!this.input.xrInputSource) {
@@ -23,13 +23,25 @@ WL.registerComponent('grab', {
             this.pickingActive = true;
             let overlaps = this.collions.queryOverlaps();
             if (overlaps.length > 0) {
-                this.draggingObj = overlaps[0].object;
-                this.draggingObj.resetTransform();
-                this.draggingObj.parent = this.object;
+                this.draggingObj = overlaps[0].object;                
+                const tags = this.draggingObj.getComponent('tags');
+                if(tags && tags.hasTag('barrel')){
+                    this.draggingObj.destroy();                    
+                    this.draggingObj=null;
+                }
+                else{
+                    this.draggingObj.resetTransform();
+                    this.draggingObj.parent = this.object;
+                }
             }           
         }
         if (!this.input.xrInputSource.gamepad.buttons[0].pressed && this.pickingActive) {
             this.pickingActive = false;
+            
+            if(!this.draggingObj){
+                return;
+            }
+
             let wp = new Float32Array(3);
             this.draggingObj.getTranslationWorld(wp);
             let quat = this.draggingObj.transformWorld;

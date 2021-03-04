@@ -4,9 +4,9 @@ Must Have:
     ✔ Transform to more god-like view @done(21-03-04 22:31)
 
     Move animals between islands:
-        ☐ Pick them up
-        ☐ Place them down
-        ☐ Drop them in the ocean
+        ✔ Pick them up @done(21-03-04 22:31)
+        ✔ Place them down @done(21-03-04 22:31)
+        ✔ Drop them in the ocean @done(21-03-04 22:31)
         ☐ Calculate weight on Island, lose the Island and Animimals if weight is too much
 
     ☐ Barrels in sea
@@ -15,23 +15,27 @@ Must Have:
 
     ☐ if water is at certain level, drown and die.
     ☐ After surviving a certain amount of time you go to the next level
-    ☐ Physics (physX)
+    
 
 Should Have:    
     ☐ Animations of dying animals
     ☐ Generate Levels
         ~ Maybe hard code a couple and show them if needed
         ~ Or create some sort of config and generate when needed            
-
+    ☐ Walk around with controller 
 
 Could Have:
-    
-    ☐ Some shader trick when looking under water.
+ 
 
 Would Like:
+    ☐ Physics (physX, add later maybe after gamejam) 
+    ☐ Some shader trick when looking under water.
 
 Bugs:
     ✔ Rays on animals don't go straight down, but down relative to the animal. @done(21-03-04 21:31)        
+
+Questions:
+    ☐ What happens when you drop a barrel on the ice?
 
 
 - Sea level / Global Warming
