@@ -26,8 +26,9 @@ WL.registerComponent('grab', {
                 this.draggingObj = overlaps[0].object;                
                 const tags = this.draggingObj.getComponent('tags');
                 if(tags && tags.hasTag('barrel')){
+                    game.removeBarrel(this.draggingObj);
                     this.draggingObj.destroy();                    
-                    this.draggingObj=null;
+                    this.draggingObj=null;                    
                 }
                 else{
                     this.draggingObj.resetTransform();
