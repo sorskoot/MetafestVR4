@@ -1450,14 +1450,20 @@
                     "type": "collision",
                     "collision": {
                         "collider": "box",
-                        "groups": 4,
+                        "groups": 12,
                         "box": {
                             "extents": [
                                 0.8999999761581421,
-                                0.10000000149011612,
+                                0.20000000298023225,
                                 1.399999976158142
                             ]
                         }
+                    }
+                },
+                {
+                    "type": "tags",
+                    "tags": {
+                        "tags": "ice"
                     }
                 }
             ],
@@ -1474,8 +1480,8 @@
                 0.0,
                 0.9626626968383788,
                 0.0,
-                0.03776472806930542,
-                0.7099498510360718,
+                0.03776451945304871,
+                0.6232887506484985,
                 -1.7937514781951905,
                 1.0
             ]
@@ -2143,7 +2149,8 @@
                     "barrel-spawner": {
                         "barrelmesh": "44",
                         "barrelmaterial": "32",
-                        "barrelsLayer": "115"
+                        "barrelsLayer": "115",
+                        "spawnrate": 1.0
                     }
                 }
             ]
@@ -2239,13 +2246,15 @@
             "link": {
                 "name": "color-atlas-new.png",
                 "file": "assets\\textures\\color-atlas-new.png"
-            }
+            },
+            "image": "35"
         },
         "39": {
             "link": {
                 "name": "Water.jpg",
                 "file": "assets\\textures\\Water.jpg"
-            }
+            },
+            "image": "38"
         }
     },
     "images": {
@@ -2386,7 +2395,7 @@
             "Phong": {
                 "diffuseTexture": "39"
             },
-            "shader": "Phong Textured"
+            "shader": "Phong"
         },
         "40": {
             "link": {
@@ -2481,7 +2490,7 @@
             "version": [
                 0,
                 8,
-                1
+                2
             ]
         },
         "vr": {
@@ -2498,7 +2507,7 @@
             ]
         },
         "runtime": {
-            "visualizeColliders": false
+            "visualizeColliders": true
         },
         "rendering": {
             "clearColor": [

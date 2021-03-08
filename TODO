@@ -9,13 +9,19 @@ Must Have:
         ✔ Drop them in the ocean @done(21-03-04 22:31)
         ☐ Calculate weight on Island, lose the Island and Animimals if weight is too much
 
-    ☐ Barrels in sea
-    ☐ Rise sea level and shrink islands based on the number of barrels in the sea
+    ✔ Barrels in sea @done(21-03-07 10:38)
+        ✔ Make sure barrels don't spawn on ice @done(21-03-08 22:41)
+    ✔ Rise sea level @done(21-03-07 10:38)
+    ☐ shrink islands based on the number of barrels in the sea
     ☐ 0 barels lowers sea and grows ice
 
     ☐ if water is at certain level, drown and die.
     ☐ After surviving a certain amount of time you go to the next level
-    
+    ☐ @today Making the boats follow a path
+
+    ☐ Title Screen
+    ☐ Game over screen
+    ☐ be able to restart
 
 Should Have:    
     ☐ Animations of dying animals
@@ -23,9 +29,11 @@ Should Have:
         ~ Maybe hard code a couple and show them if needed
         ~ Or create some sort of config and generate when needed            
     ☐ Walk around with controller 
+    ☐ Music
+    ☐ sound fx
 
 Could Have:
- 
+    ☐ Picking up barrels and drop them in a specific place
 
 Would Like:
     ☐ Physics (physX, add later maybe after gamejam) 

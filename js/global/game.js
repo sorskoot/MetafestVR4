@@ -5,8 +5,7 @@ class Game
     }
     registerWater(waterLevel){
         this.waterLevel = waterLevel;
-    }
-
+    }    
     /**
      * 
      * @param {WL.Object} barrel 
