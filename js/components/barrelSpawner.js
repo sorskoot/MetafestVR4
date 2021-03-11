@@ -1,7 +1,7 @@
 /// <reference path="../../deploy/wonderland.js" />
 
 WL.registerComponent('barrel-spawner', {
-    spawnrate: {type: WL.Type.Float, default: 3.0},
+    spawnrate: {type: WL.Type.Float, default: 5.0},
     barrelmesh:{type:WL.Type.Mesh, default:null},
     barrelmaterial:{type:WL.Type.Material, default:null},
     barrelsLayer:{type:WL.Type.Object}

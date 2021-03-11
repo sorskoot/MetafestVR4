@@ -1,7 +1,8 @@
 THEME Ascending or Rising
 
 Must Have:
-    ☐ @today Walk around with controller 
+    ☐ @high name the game
+    ✔ Walk around with controller @done(21-03-11 21:50)
 
     Move animals between islands:
         ☐ Spanw/create multiple Islands
@@ -12,14 +13,19 @@ Must Have:
     ☐ 0 barels lowers sea and grows ice
 
     ☐ if water is at certain level, drown and die.
+    ☐ or if all the animals are dead
+        
     ☐ After surviving a certain amount of time you go to the next level
-        ☐ Spawn barrel behind boat.
+        ✔ Spawn barrel behind boat. @done(21-03-11 21:17)
 
     ☐ Title Screen
     ☐ Game over screen
     ☐ be able to restart
+    ☐ Credits -> highlight all subs during gamejam
 
 Should Have:    
+    ☐ prevent walking off the earth
+    ☐ make sea bigger, add fog
     ☐ Animations of dying animals
     ☐ Generate Levels
         ~ Maybe hard code a couple and show them if needed
@@ -34,6 +40,10 @@ Could Have:
 Would Like:
     ☐ Physics (physX, add later maybe after gamejam) 
     ☐ Some shader trick when looking under water.
+
+@critical Bugs:
+    ☐ Can't pick up barrels
+
 
 
 Questions:
