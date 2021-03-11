@@ -1,23 +1,19 @@
 THEME Ascending or Rising
 
 Must Have:
-    ✔ Transform to more god-like view @done(21-03-04 22:31)
+    ☐ @today Walk around with controller 
 
     Move animals between islands:
-        ✔ Pick them up @done(21-03-04 22:31)
-        ✔ Place them down @done(21-03-04 22:31)
-        ✔ Drop them in the ocean @done(21-03-04 22:31)
+        ☐ Spanw/create multiple Islands
         ☐ Calculate weight on Island, lose the Island and Animimals if weight is too much
 
-    ✔ Barrels in sea @done(21-03-07 10:38)
-        ✔ Make sure barrels don't spawn on ice @done(21-03-08 22:41)
-    ✔ Rise sea level @done(21-03-07 10:38)
-    ☐ shrink islands based on the number of barrels in the sea
+    ☐ @today shrink islands based on the number of barrels in the sea
+    ☐ Make animals fall of ice when too small
     ☐ 0 barels lowers sea and grows ice
 
     ☐ if water is at certain level, drown and die.
     ☐ After surviving a certain amount of time you go to the next level
-    ☐ @today Making the boats follow a path
+        ☐ Spawn barrel behind boat.
 
     ☐ Title Screen
     ☐ Game over screen
@@ -27,10 +23,10 @@ Should Have:
     ☐ Animations of dying animals
     ☐ Generate Levels
         ~ Maybe hard code a couple and show them if needed
-        ~ Or create some sort of config and generate when needed            
-    ☐ Walk around with controller 
+        ~ Or create some sort of config and generate when needed                
     ☐ Music
     ☐ sound fx
+    ☐ animation when water lever rises
 
 Could Have:
     ☐ Picking up barrels and drop them in a specific place
@@ -39,12 +35,9 @@ Would Like:
     ☐ Physics (physX, add later maybe after gamejam) 
     ☐ Some shader trick when looking under water.
 
-Bugs:
-    ✔ Rays on animals don't go straight down, but down relative to the animal. @done(21-03-04 21:31)        
 
 Questions:
     ☐ What happens when you drop a barrel on the ice?
-
 
 - Sea level / Global Warming
     ~ Save polarbears and pinguins (seals)
@@ -64,10 +57,6 @@ Questions:
         - Ices that shrinks.
             ~ maybe slowly scale it down
 
-
-
-
-
 - Leaking submarine
     ~ room scale
     ~ little challenges like among us to do in a room
@@ -82,7 +71,6 @@ Questions:
     - Stars  / pop stars
     - helium baloons 
   
-
     - Rockets / Firework
         ~ design a show
     - Zombies rising from their graves
@@ -96,6 +84,13 @@ Questions:
     - join the maffia and rise to the top
     - rebuild of descent. 
 
-    
-    
-
+Archive:
+  ✔ Transform to more god-like view @done(21-03-04 22:31) @project(Must Have)
+  ✔ Pick them up @done(21-03-04 22:31) @project(Must Have.Move animals between islands)
+  ✔ Place them down @done(21-03-04 22:31) @project(Must Have.Move animals between islands)
+  ✔ Drop them in the ocean @done(21-03-04 22:31) @project(Must Have.Move animals between islands)
+  ✔ Barrels in sea @done(21-03-07 10:38) @project(Must Have)
+  ✔ Make sure barrels don't spawn on ice @done(21-03-08 22:41) @project(Must Have)
+  ✔ Rise sea level @done(21-03-07 10:38) @project(Must Have)
+  ✔ Making the boats follow a path @done(21-03-08 23:45) @project(Must Have)
+  ✔ Rays on animals don't go straight down, but down relative to the animal. @done(21-03-04 21:31)         @project(Bugs)

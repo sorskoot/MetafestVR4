@@ -13,8 +13,10 @@ WL.registerComponent('barrel-spawner', {
         setInterval(this.spawn.bind(this),this.spawnrate*1000);
     },
     spawn: function() {      
-            let barrel = WL.scene.addObject(this.barrelsLayer);          
-            barrel.translate([Math.random()*6-3,0,Math.random()*6-3])
+            let barrel = WL.scene.addObject(this.barrelsLayer);   
+            let pos=[];
+            this.object.getTranslationWorld(pos);
+            barrel.setTranslationWorld([Math.random()+pos[0]-.5,pos[1],Math.random()+pos[2]-.5])
             barrel.transformWorld; // workaround to update;            
             let barrelMesh = WL.scene.addObject(barrel);
             let mesh = barrelMesh.addComponent('mesh');
