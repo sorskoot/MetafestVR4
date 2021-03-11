@@ -1,22 +1,23 @@
 THEME Ascending or Rising
+~ Title: Rising Seas    
+~ subtitle: Polar Bear Rescue 
 
 Must Have:
-    ☐ @high name the game
+    ✔ name the game @done(21-03-12 00:16)       
     ✔ Walk around with controller @done(21-03-11 21:50)
 
     Move animals between islands:
-        ☐ Spanw/create multiple Islands
-        ☐ Calculate weight on Island, lose the Island and Animimals if weight is too much
+        ☐ Spawn/create multiple ice        
 
-    ☐ @today shrink islands based on the number of barrels in the sea
+    ✔ shrink islands based on the number of barrels in the sea @done(21-03-12 00:11)
     ☐ Make animals fall of ice when too small
-    ☐ 0 barels lowers sea and grows ice
-
-    ☐ if water is at certain level, drown and die.
-    ☐ or if all the animals are dead
-        
-    ☐ After surviving a certain amount of time you go to the next level
-        ✔ Spawn barrel behind boat. @done(21-03-11 21:17)
+    ☐ < X barels lowers sea and grows ice
+    
+    Add Game Over:
+        ☐ if water is at certain level, drown and die.
+        ☐ or if all the animals are dead
+            
+    ✔ Spawn barrel behind boat. @done(21-03-11 21:17)
 
     ☐ Title Screen
     ☐ Game over screen
@@ -24,6 +25,7 @@ Must Have:
     ☐ Credits -> highlight all subs during gamejam
 
 Should Have:    
+    ☐ not scale ice down linear
     ☐ prevent walking off the earth
     ✔ make sea bigger, add fog @done(21-03-11 22:00)
     ☐ Animations of dying animals
@@ -32,10 +34,12 @@ Should Have:
         ~ Or create some sort of config and generate when needed                
     ☐ Music
     ☐ sound fx
-    ☐ animation when water lever rises
+    ☐ animation when water lever rises    
 
 Could Have:
     ☐ Picking up barrels and drop them in a specific place
+    ☐ After surviving a certain amount of time you go to the next level
+    ☐ Calculate weight on ice, lose the Island and Animimals if weight is too much
 
 Would Like:
     ☐ Physics (physX, add later maybe after gamejam) 

@@ -54,7 +54,7 @@ WL.registerComponent('grab', {
                 rayHit.objects[0].getTranslationWorld(iceCollisionTransform);
                 
                 let animalsContainer = 
-                    objectUtils.getChildByName(rayHit.objects[0].parent,"Animals");
+                    objectUtils.getChildByName(rayHit.objects[0].parent.parent,"Animals");
                 console.log(animalsContainer);
                 this.draggingObj.parent = animalsContainer;                
                 this.draggingObj.setTranslationWorld(

@@ -26,7 +26,7 @@ WL.registerComponent('barrel-spawner', {
 
             let collisionComponent = barrel.addComponent('collision');
             collisionComponent.collider = WL.Collider.Box;
-            collisionComponent.group = 1 << 2;
+            collisionComponent.group = (1 << 2) | (1 << 3);
             collisionComponent.extents = [0.11, 0.17, .11];
             collisionComponent.active = true;
             
