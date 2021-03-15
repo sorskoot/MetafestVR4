@@ -13,6 +13,8 @@ WL.registerComponent('ice-controller', {
     },
     start: function () {
         this.collider = this.iceCollider.getComponent('collision');
+        this.originalExtents = new Float32Array(this.collider.extents);
+       
         game.registerIce(this);
     },
     update: function (dt) {
@@ -22,12 +24,18 @@ WL.registerComponent('ice-controller', {
             this.deltaScale = 1 - dt * (this.freezingDelta * (this.meltingSpeed-2)) / 100;            
         }
                     
-        if (this.object.scalingWorld[0] < .1) {
+        if (this.object.scalingWorld[0] < .1) {            
             game.unregisterIce(this);
             this.object.destroy();
-        }else if (this.object.scalingWorld[0] > 1) {                    
+        }else if (this.object.scalingWorld[0] > 1) {                                            
+            this.collider.extents.set(this.originalExtents);
             this.object.resetScaling();
         }else{
+            glMatrix.vec3.mul(
+                this.collider.extents, 
+                this.originalExtents,
+                this.object.scalingWorld
+                );            
             this.object.scale([this.deltaScale, 1, this.deltaScale])
         }
     },

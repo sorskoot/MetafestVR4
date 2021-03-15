@@ -31,6 +31,8 @@ WL.registerComponent('grab', {
                     this.draggingObj=null;                    
                 }
                 else{
+                    const animal = this.draggingObj.getComponent('animal');
+                    animal.isHeld = true;
                     this.draggingObj.resetTransform();
                     this.draggingObj.parent = this.object;
                 }
@@ -42,14 +44,17 @@ WL.registerComponent('grab', {
             if(!this.draggingObj){
                 return;
             }
+            
+            const animal = this.draggingObj.getComponent('animal');
+            animal.isHeld = false;
 
             let wp = new Float32Array(3);
             this.draggingObj.getTranslationWorld(wp);
-            let quat = this.draggingObj.transformWorld;
             let downDirection = [0, -1, 0];            
             let rayHit = WL.scene.rayCast(wp, downDirection, (1 << 2));
 
             if (rayHit.hitCount > 0) {
+                
                 let iceCollisionTransform = new Float32Array(3);
                 rayHit.objects[0].getTranslationWorld(iceCollisionTransform);
                 
@@ -65,7 +70,7 @@ WL.registerComponent('grab', {
                 this.draggingObj = null;
             }else{
                 this.draggingObj.destroy();
-                console.log("Oh my god! You killed a polar bear! You bastard!")
+                console.log("Oh my god! You killed an animal You bastard!")
             }            
         }
 

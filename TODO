@@ -3,31 +3,29 @@ THEME Ascending or Rising
 ~ subtitle: Polar Bear Rescue 
 
 Must Have:
-    ✔ name the game @done(21-03-12 00:16)       
-    ✔ Walk around with controller @done(21-03-11 21:50)
+    ☐ @today Spawn/create multiple ice
+        ~ maybe create a 'pool' of ice and make it drift into view 
+        ~ once ice is melted reset and move to the outside      
 
-    Move animals between islands:
-        ☐ Spawn/create multiple ice        
-
-    ✔ shrink islands based on the number of barrels in the sea @done(21-03-12 00:11)
-    ☐ Make animals fall of ice when too small
-    ☐ < X barels lowers sea and grows ice
+    ☐ @today Make animals fall of ice when too small
+        ~ cast a ray down every 15 frames to check
+        ~ only cast a ray when not being held
     
-    Add Game Over:
+    @today Add Game Over:
         ☐ if water is at certain level, drown and die.
         ☐ or if all the animals are dead
             
-    ✔ Spawn barrel behind boat. @done(21-03-11 21:17)
-
     ☐ Title Screen
     ☐ Game over screen
     ☐ be able to restart
     ☐ Credits -> highlight all subs during gamejam
 
+    Bugs @critical :
+        ☐ Ice is shaking/gliching when not melting.
+
 Should Have:    
     ☐ not scale ice down linear
     ☐ prevent walking off the earth
-    ✔ make sea bigger, add fog @done(21-03-11 22:00)
     ☐ Animations of dying animals
     ☐ Generate Levels
         ~ Maybe hard code a couple and show them if needed
@@ -44,11 +42,6 @@ Could Have:
 Would Like:
     ☐ Physics (physX, add later maybe after gamejam) 
     ☐ Some shader trick when looking under water.
-
-@critical Bugs:
-    ☐ Can't pick up barrels
-
-
 
 Questions:
     ☐ What happens when you drop a barrel on the ice?
@@ -99,6 +92,14 @@ Questions:
     - rebuild of descent. 
 
 Archive:
+  ✔ Move animals between islands @done(21-03-15 20:45) @project(Must Have)
+  ✔ < X barels lowers sea and grows ice @done(21-03-15 20:45) @project(Must Have)
+  ✔ Can't pick up barrels @done(21-03-15 17:33) @project(@critical Bugs)
+  ✔ name the game @done(21-03-12 00:16)        @project(Must Have)
+  ✔ Walk around with controller @done(21-03-15 17:33) @project(Must Have)
+  ✔ shrink islands based on the number of barrels in the sea @done(21-03-12 00:11) @project(Must Have)
+  ✔ Spawn barrel behind boat. @done(21-03-11 21:17) @project(Must Have)
+  ✔ make sea bigger, add fog @done(21-03-11 22:00) @project(Should Have)
   ✔ Transform to more god-like view @done(21-03-04 22:31) @project(Must Have)
   ✔ Pick them up @done(21-03-04 22:31) @project(Must Have.Move animals between islands)
   ✔ Place them down @done(21-03-04 22:31) @project(Must Have.Move animals between islands)

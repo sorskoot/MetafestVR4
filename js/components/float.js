@@ -6,9 +6,7 @@ WL.registerComponent('float', {
 }, {
 
     start: function() {
-        this.count = 0;//Math.random() * Math.PI * 2;
-          
-        
+        this.count = Math.random() * Math.PI * 2;                
     },
     update: function(dt) {              
         if(!this.orgPosition){
