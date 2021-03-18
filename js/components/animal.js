@@ -5,6 +5,7 @@ WL.registerComponent('animal', {
         start: function () {
             this.counter = 0;
             this.isHeld = false;
+            game.animalSpawned(this);
         },        
         update: function (dt) {
             if(this.isHeld) return;
@@ -17,8 +18,8 @@ WL.registerComponent('animal', {
                 this.object.getTranslationWorld(wp);
                 let downDirection = [0, -1, 0];
                 let rayHit = WL.scene.rayCast(wp, downDirection, (1 << 2));
-                if (rayHit.hitCount === 0) {
-                    console.log('animal died');
+                if (rayHit.hitCount === 0) {                    
+                    game.animalDied(this);
                     this.object.destroy();
                 }
             }

@@ -9,5 +9,6 @@ const objectUtils = {
      */
     getChildByName: function (object, name) {
         return object.children.find(function (d) { return d.name === name });
-    }
+    },
+
 }

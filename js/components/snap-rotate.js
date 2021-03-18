@@ -13,6 +13,8 @@ WL.registerComponent('snap-rotate', {
 
     },
     update: function (dt) {
+        if(game.state!== GAME_STATES.PLAY) return;
+        
         if (!this.input.xrInputSource) {
             return;
         }

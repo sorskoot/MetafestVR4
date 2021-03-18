@@ -8,11 +8,12 @@ WL.registerComponent('grab', {
     },    
     start: function () {
         this.input = this.object.getComponent("input");
-        this.collions = this.object.getComponent("collision")
+        this.collisions = this.object.getComponent("collision")
         this.pickingActive = false;
 
     },    
     update: function (dt) {
+        if(game.state !== GAME_STATES.PLAY) return;
 
         if (!this.input.xrInputSource) {
             return;
@@ -21,7 +22,7 @@ WL.registerComponent('grab', {
         if (this.input.xrInputSource.gamepad.buttons[0].pressed && !this.pickingActive) {
 
             this.pickingActive = true;
-            let overlaps = this.collions.queryOverlaps();
+            let overlaps = this.collisions.queryOverlaps();
             if (overlaps.length > 0) {
                 this.draggingObj = overlaps[0].object;                
                 const tags = this.draggingObj.getComponent('tags');

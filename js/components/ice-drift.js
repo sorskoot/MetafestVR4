@@ -5,7 +5,7 @@ WL.registerComponent('ice-drift', {
     isDrifting: { type: WL.Type.Bool, default: false },
     iceController: {type: WL.Type.Object, default: null}
 }, {
-    init: function () {                
+    init: function () {                   
         this.currentPosition = new Float32Array(3);
         this.fromPosition = [];
         this.startLocation.getTranslationWorld(this.fromPosition);
@@ -16,11 +16,12 @@ WL.registerComponent('ice-drift', {
         glMatrix.vec3.sub(this.currentPosition, this.toPosition, this.fromPosition);
         this.fromToLength = glMatrix.vec3.length(this.currentPosition);
         this.currentLength = 0;
-
+        
         this.object.setTranslationWorld(this.currentPosition);
     },
 
     update: function (dt) {
+        if(game.state !== GAME_STATES.PLAY) return;
         if (this.isDrifting) {
             this.currentLength += dt * this.speed;
             let factor = this.currentLength / this.fromToLength;
@@ -33,7 +34,7 @@ WL.registerComponent('ice-drift', {
                 [this.currentPosition[0],position[1],this.currentPosition[2]]);
 
             if (this.currentLength >= this.fromToLength) {
-                //game.iceAtDestination(this.iceController.getComponent('ice-controller'));
+                game.iceAtDestination(this.iceController.getComponent('ice-controller'));
                 this.isDrifting = false;                
             }
            

@@ -6,21 +6,24 @@ WL.registerComponent('float', {
 }, {
 
     start: function() {
-        this.count = Math.random() * Math.PI * 2;                
+        this.count = Math.random() * Math.PI * 2;      
+                
     },
     update: function(dt) {              
-        if(!this.orgPosition){
-            this.orgPosition = [];
-            this.object.getTranslationLocal(this.orgPosition);     
-        };
+        if(!this.y){
+            let p = [];
+            this.object.getTranslationLocal(p);  
+            this.y = p[1];
+        }
         this.count += dt * this.speed;        
         if(this.count > Math.PI*2){
             this.count -= Math.PI*2;
         }        
-        
+        let orgPosition = [];
+        this.object.getTranslationLocal(orgPosition);     
         this.object.setTranslationLocal(
-            [this.orgPosition[0],             
-            this.orgPosition[1]+(Math.sin(this.count) * this.depth),
-            this.orgPosition[2]]);
+            [orgPosition[0],             
+            this.y+(Math.sin(this.count) * this.depth),
+            orgPosition[2]]);
     },
 });

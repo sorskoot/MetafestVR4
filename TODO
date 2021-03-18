@@ -3,27 +3,28 @@ THEME Ascending or Rising
 ~ subtitle: Polar Bear Rescue 
 
 Must Have:
-    ☐ @today Spawn/create multiple ice
+    ☐ Spawn/create multiple ice
+        ☐ reset ice when melted
+        ☐ Add animals to ice on reset
+        ☐ Create a pool of animals are add these to the ice
+        ☐ When animals die add back to the pool
+        ☐ When game over, all animals go to the pool
         ~ maybe create a 'pool' of ice and make it drift into view 
         ~ once ice is melted reset and move to the outside      
-
-    ☐ @today Make animals fall of ice when too small
-        ~ cast a ray down every 15 frames to check
-        ~ only cast a ray when not being held
     
     @today Add Game Over:
-        ☐ if water is at certain level, drown and die.
+        ✔ if water is at certain level, drown and die. @done(21-03-18 23:08)
         ☐ or if all the animals are dead
             
-    ☐ Title Screen
-    ☐ Game over screen
-    ☐ be able to restart
+    ✔ @today Title Screen @done(21-03-18 22:58)
+    ✔ @today Game over screen @done(21-03-18 22:58)
+    ☐ @today be able to restart
+    ✔ @today Game state @done(21-03-18 22:59)
+    ✔ @today Detect button presses to start @done(21-03-18 22:59)
+  
+Should Have:   
     ☐ Credits -> highlight all subs during gamejam
-
-    Bugs @critical :
-        ☐ Ice is shaking/gliching when not melting.
-
-Should Have:    
+    ☐ rotate animals 
     ☐ not scale ice down linear
     ☐ prevent walking off the earth
     ☐ Animations of dying animals
@@ -92,6 +93,8 @@ Questions:
     - rebuild of descent. 
 
 Archive:
+  ✔ Ice is shaking/gliching when not melting. @done(21-03-18 21:04) @project(Must Have.Bugs @critical )
+  ✔ Make animals fall of ice when too small @done(21-03-15 22:36) @project(Must Have)
   ✔ Move animals between islands @done(21-03-15 20:45) @project(Must Have)
   ✔ < X barels lowers sea and grows ice @done(21-03-15 20:45) @project(Must Have)
   ✔ Can't pick up barrels @done(21-03-15 17:33) @project(@critical Bugs)
