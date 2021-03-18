@@ -125,6 +125,9 @@ WL.registerComponent('waypoint-movement', {
       this.fromToLength = glMatrix.vec3.length(this.currentPosition);
     },
     update: function(dt) {
+      
+      if(game.state !== GAME_STATES.PLAY) return;
+
       this.currentLength += dt * this.speed;
 	  // factor indicates the percentage of how much of a given distance between two points has already been traversed
       let factor = this.currentLength / this.fromToLength;
