@@ -10,7 +10,16 @@ WL.registerComponent('barrel-spawner', {
 
     },
     start: function () {
+        game.registerBarrelSpawner(this);
         setInterval(this.spawn.bind(this), this.spawnrate * 1000);
+    },
+    reset:function(){
+        const children = this.barrelsLayer.children
+        for (let i = 0; i < children.length; i++) {
+            console.log(i);
+            children[i].destroy();
+           
+        }
     },
     spawn: function () {
         if (game.state !== GAME_STATES.PLAY) return;

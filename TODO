@@ -3,6 +3,7 @@ THEME Ascending or Rising
 ~ subtitle: Polar Bear Rescue 
 
 Must Have:
+    ☐ Disable game running on desktop, only run in Quest
     ☐ Spawn/create multiple ice
         ☐ reset ice when melted
         ☐ Add animals to ice on reset
@@ -13,14 +14,9 @@ Must Have:
         ~ once ice is melted reset and move to the outside      
     
     @today Add Game Over:
-        ✔ if water is at certain level, drown and die. @done(21-03-18 23:08)
-        ☐ or if all the animals are dead
+        ☐ if all the animals are dead
             
-    ✔ @today Title Screen @done(21-03-18 22:58)
-    ✔ @today Game over screen @done(21-03-18 22:58)
-    ☐ @today be able to restart
-    ✔ @today Game state @done(21-03-18 22:59)
-    ✔ @today Detect button presses to start @done(21-03-18 22:59)
+    ☐ be able to restart
   
 Should Have:   
     ☐ Credits -> highlight all subs during gamejam
@@ -34,7 +30,7 @@ Should Have:
     ☐ Music
     ☐ sound fx
     ☐ animation when water lever rises    
-
+    ☐ snow
 Could Have:
     ☐ Picking up barrels and drop them in a specific place
     ☐ After surviving a certain amount of time you go to the next level
@@ -93,6 +89,11 @@ Questions:
     - rebuild of descent. 
 
 Archive:
+  ✔ if water is at certain level, drown and die. @done(21-03-18 23:08) @project(Must Have.@today Add Game Over)
+  ✔ @today Title Screen @done(21-03-18 22:58) @project(Must Have)
+  ✔ @today Game over screen @done(21-03-18 22:58) @project(Must Have)
+  ✔ @today Game state @done(21-03-18 22:59) @project(Must Have)
+  ✔ @today Detect button presses to start @done(21-03-18 22:59) @project(Must Have)
   ✔ Ice is shaking/gliching when not melting. @done(21-03-18 21:04) @project(Must Have.Bugs @critical )
   ✔ Make animals fall of ice when too small @done(21-03-15 22:36) @project(Must Have)
   ✔ Move animals between islands @done(21-03-15 20:45) @project(Must Have)

@@ -1,7 +1,7 @@
 /// <reference path="../../deploy/wonderland.js" />
 
 WL.registerComponent('ice-controller', {
-    meltingDelta: { type: WL.Type.Float, default: 3.0 },
+    meltingDelta: { type: WL.Type.Float, default: 5.0 },
     freezingDelta: { type: WL.Type.Float, default: 10.0 },
     freezingPoint: { type: WL.Type.Float, default: 5.0 },
     iceCollider: { type: WL.Type.Object },
@@ -14,6 +14,23 @@ WL.registerComponent('ice-controller', {
         this.isVisible = false;
         this.barrelsAtStart = 0;
     },
+    reset:function(){
+        this.meltingSpeed = 0;
+        this.deltaScale = 1;
+        this.isMelting = false;
+        this.isVisible = false;
+        this.barrelsAtStart = 0;
+
+        if(!this.collider){
+            this.collider = this.iceCollider.getComponent('collision');
+        }
+
+        this.collider.extents.set(this.originalExtents);
+        this.object.resetScaling();
+    },
+    addAnimal(animal){
+        animal.object.parent = objectUtils.getChildByName(this.object.parent,"Animals");
+    },
     start: function () {
         this.collider = this.iceCollider.getComponent('collision');
         this.originalExtents = new Float32Array(this.collider.extents);
@@ -24,7 +41,6 @@ WL.registerComponent('ice-controller', {
         if(game.state !== GAME_STATES.PLAY) return;
         
         if (!this.isMelting) return;
-        // console.log(this.object.objectId, this.object.scalingWorld[0]);
         if (this.meltingSpeed > 0) {
             this.deltaScale = 1 - dt * this.meltingDelta / 100;
         } else {
@@ -39,8 +55,7 @@ WL.registerComponent('ice-controller', {
         this.object.scale([this.deltaScale, 1, this.deltaScale])
 
         if (this.object.scalingWorld[0] < .1) {
-            game.unregisterIce(this);
-            //this.object.destroy();
+            game.resetIce(this);
         } else if (this.object.scalingWorld[0] > 1) {
             this.collider.extents.set(this.originalExtents);
             this.object.resetScaling();
