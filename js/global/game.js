@@ -1,7 +1,8 @@
 const GAME_STATES = {
     TITLE: "TITLE_SCREEN",
     GAMEOVER: "GAME_OVER",
-    PLAY: "PLAY"
+    PLAY: "PLAY",
+    PAUSED: "PAUSED"
 }
 
 class Game {
@@ -21,20 +22,28 @@ class Game {
         this.titleMusic.volume = .5;
         this.gameMusic = document.getElementById("gameMusic");
         this.gameMusic.volume = .3;
-        WL.onXRSessionStart.push(this.playMusic.bind(this));
-        WL.onXRSessionEnd.push(this.stopMusic.bind(this));
+        WL.onXRSessionStart.push(this.enterXR.bind(this));
+        WL.onXRSessionEnd.push(this.exitXR.bind(this));
     }
 
-    playMusic() {
-        if (this.state !== GAME_STATES.PLAY) {
+    enterXR() {
+        if (this.state !== GAME_STATES.PLAY
+            && this.state !== GAME_STATES.PAUSED) {
             this.titleMusic.play();
             this.gameMusic.pause();
         } else {
+            if (this.state === GAME_STATES.PAUSED) {
+                this.state = GAME_STATES.PLAY;
+            }
             this.gameMusic.play();
             this.titleMusic.pause();
         }
     }
-    stopMusic() {
+    exitXR() {
+        if (this.state === GAME_STATES.PLAY) {
+            this.state = GAME_STATES.PAUSED;
+            console.log("Game Paused");
+        }
         this.titleMusic.pause();
         this.gameMusic.pause();
     }
@@ -84,10 +93,12 @@ class Game {
     }
 
     resetIce(iceController) {
-        // this.iceControllers.splice(
-        //     this.iceControllers.findIndex(d=>d._id === iceController._id), 1);        
-
-        // make sure any existing animals fall off.
+        // reparent any existing animals to make them fall off the ice.
+        const animalObject = objectUtils.getChildByName(iceController.object.parent, "Animals");
+        const animalObjectChildren = animalObject.children;
+        for (let i = 0; i < animalObjectChildren.length; i++) {
+            animalObjectChildren[i].parent = iceController.parent.parent;
+        }
 
         iceController.reset();
         let penguin2 = this.getPenguinFromPool();
@@ -110,7 +121,7 @@ class Game {
         this.reset();
         this.state = GAME_STATES.PLAY;
         this.score = 0;
-        this.playMusic();
+        this.enterXR();
         return this.state;
     }
 
@@ -141,6 +152,11 @@ class Game {
             this.animalCount++;
         }
         this.iceControllers[0].object.parent.getComponent('ice-drift').currentLength = 20;
+        this.iceControllers[0].startDrift();
+
+        setTimeout(() => {
+            this.iceControllers[1].startDrift();
+        }, 5000);
 
     }
 

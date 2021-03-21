@@ -27,6 +27,10 @@ WL.registerComponent('ice-controller', {
 
         this.collider.extents.set(this.originalExtents);
         this.object.resetScaling();
+        this.object.parent.getComponent('ice-drift').reset();
+    },
+    startDrift(){
+        this.object.parent.getComponent('ice-drift').isDrifting = true;
     },
     addAnimal(animal){
         animal.object.parent = objectUtils.getChildByName(this.object.parent,"Animals");
@@ -54,7 +58,7 @@ WL.registerComponent('ice-controller', {
         );
         this.object.scale([this.deltaScale, 1, this.deltaScale])
 
-        if (this.object.scalingWorld[0] < .1) {
+        if (this.object.scalingWorld[0] < .5) {
             game.resetIce(this);
         } else if (this.object.scalingWorld[0] > 1) {
             this.collider.extents.set(this.originalExtents);

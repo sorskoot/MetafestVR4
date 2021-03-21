@@ -2,36 +2,23 @@ THEME Ascending or Rising
 ~ Title: Rising Seas    
 ~ subtitle: Polar Bear Rescue 
 
-Must Have:
-    ☐ Disable game running on desktop, only run in Quest
-    ☐ Spawn/create multiple ice
-        ☐ reset ice when melted
-        ☐ Add animals to ice on reset
-        ☐ Create a pool of animals are add these to the ice
-        ☐ When animals die add back to the pool
-        ☐ When game over, all animals go to the pool
-        ~ maybe create a 'pool' of ice and make it drift into view 
-        ~ once ice is melted reset and move to the outside      
-    
-    @today Add Game Over:
-        ☐ if all the animals are dead
-            
-    ☐ be able to restart
+Must Have:           
   
-Should Have:   
-    ☐ Credits -> highlight all subs during gamejam
-    ☐ rotate animals 
-    ☐ not scale ice down linear
+Should Have:       
+    ☐ rotate animals correctly when placing them
     ☐ prevent walking off the earth
-    ☐ Animations of dying animals
-    ☐ Generate Levels
-        ~ Maybe hard code a couple and show them if needed
-        ~ Or create some sort of config and generate when needed                
-    ☐ Music
+    ☐ Animations of dying animals    
+    ✔ Music @done(21-03-20 22:54)
     ☐ sound fx
     ☐ animation when water lever rises    
     ☐ snow
+        ~ tried, but 'particles' gave issues with materials.
 Could Have:
+    ☐ not scale ice down linear
+    ☐ Generate Levels
+        ~ Maybe hard code a couple and show them if needed
+        ~ Or create some sort of config and generate when needed                
+    ☐ Credits -> highlight all subs during gamejam
     ☐ Picking up barrels and drop them in a specific place
     ☐ After surviving a certain amount of time you go to the next level
     ☐ Calculate weight on ice, lose the Island and Animimals if weight is too much
@@ -89,6 +76,16 @@ Questions:
     - rebuild of descent. 
 
 Archive:
+  ✔ Disable game running on desktop, only run in Quest @done(21-03-20 22:53) @project(Must Have)
+  ✔ Spawn/create multiple ice @done(21-03-20 22:53) @project(Must Have)
+  ✔ reset ice when melted @done(21-03-20 22:53) @project(Must Have)
+  ✔ Add animals to ice on reset @done(21-03-20 22:53) @project(Must Have)
+  ✔ Create a pool of animals are add these to the ice @done(21-03-20 22:53) @project(Must Have)
+  ✔ When animals die add back to the pool @done(21-03-20 22:53) @project(Must Have)
+  ✔ When game over, all animals go to the pool @done(21-03-20 22:53) @project(Must Have)
+  ✔ @today Add Game Over: @done(21-03-20 22:53) @project(Must Have)
+  ✔ if all the animals are dead @done(21-03-20 22:53) @project(Must Have)
+  ✔ be able to restart @done(21-03-20 22:53) @project(Must Have)
   ✔ if water is at certain level, drown and die. @done(21-03-18 23:08) @project(Must Have.@today Add Game Over)
   ✔ @today Title Screen @done(21-03-18 22:58) @project(Must Have)
   ✔ @today Game over screen @done(21-03-18 22:58) @project(Must Have)
