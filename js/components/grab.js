@@ -27,12 +27,18 @@ WL.registerComponent('grab', {
                 this.draggingObj = overlaps[0].object;                
                 const tags = this.draggingObj.getComponent('tags');
                 if(tags && tags.hasTag('barrel')){
+                    sfx.SplashSubtle.play();
                     game.removeBarrel(this.draggingObj);
                     this.draggingObj.destroy();                    
                     this.draggingObj=null;                    
                 }
                 else{
                     const animal = this.draggingObj.getComponent('animal');
+                    if(animal.animalType === 0){
+                        sfx.polarbear.play();
+                    }else{
+                        sfx.penguin.play();
+                    }
                     animal.isHeld = true;
                     this.draggingObj.resetTransform();
                     this.draggingObj.parent = this.object;

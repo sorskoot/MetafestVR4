@@ -48,6 +48,7 @@ WL.registerComponent('animal', {
                 let downDirection = [0, -1, 0];
                 let rayHit = WL.scene.rayCast(wp, downDirection, (1 << 2));
                 if (rayHit.hitCount === 0) {
+                    sfx.Splash2.play();
                     game.animalDied(this);
                     //this.object.destroy();
                 }

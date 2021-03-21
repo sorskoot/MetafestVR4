@@ -1,3 +1,5 @@
+/// <reference path="../../static/howler.core.min.js" />
+
 const GAME_STATES = {
     TITLE: "TITLE_SCREEN",
     GAMEOVER: "GAME_OVER",
@@ -24,6 +26,7 @@ class Game {
         this.gameMusic.volume = .3;
         WL.onXRSessionStart.push(this.enterXR.bind(this));
         WL.onXRSessionEnd.push(this.exitXR.bind(this));
+          
     }
 
     enterXR() {
@@ -97,7 +100,7 @@ class Game {
         const animalObject = objectUtils.getChildByName(iceController.object.parent, "Animals");
         const animalObjectChildren = animalObject.children;
         for (let i = 0; i < animalObjectChildren.length; i++) {
-            animalObjectChildren[i].parent = iceController.parent.parent;
+            animalObjectChildren[i].parent = iceController.object.parent.parent;
         }
 
         iceController.reset();
@@ -123,6 +126,7 @@ class Game {
         this.score = 0;
         this.enterXR();
         return this.state;
+
     }
 
     reset() {
@@ -170,7 +174,7 @@ class Game {
         this.animalPool.push(animal);
     }
 
-    animalDied(animal) {
+    animalDied(animal) {        
         animal.kill();
         animal.object.parent = animal.animalType === 0 ? this.polarbearPoolParent : this.penguinPoolParent;
         this.animalCount--;

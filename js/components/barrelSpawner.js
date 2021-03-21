@@ -23,7 +23,7 @@ WL.registerComponent('barrel-spawner', {
     },
     spawn: function () {
         if (game.state !== GAME_STATES.PLAY) return;
-        
+        sfx.Splash1.play();
         let barrel = WL.scene.addObject(this.barrelsLayer);
         let pos = [];
         this.object.getTranslationWorld(pos);
